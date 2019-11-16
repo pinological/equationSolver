@@ -1,6 +1,6 @@
-let x, x1 , x2;
-let y, y1 , y2;
-let z, z1 , z2;
+let x, x1, x2;
+let y, y1, y2;
+let z, z1, z2;
 let xx, yy, zz;
 
 alert("Enter coff of 1 eqation after another");
@@ -25,33 +25,32 @@ zz = parseFloat(prompt("Enter last number of eqation 3"));
 // x2  y2    z2   zz
 
 console.log(" x = " + x + " y = " + y + " z = " + z);
-console.log(" x1 = " + x1 + " y1 = " + y1+ " z1 = " + z1);
+console.log(" x1 = " + x1 + " y1 = " + y1 + " z1 = " + z1);
 console.log(" x2 = " + x2 + " y2 = " + y2 + " z2 = " + z2);
 console.log(" xx = " + xx + " yy = " + yy + " zz = " + zz);
 
 let d, d1, d2, d3;
-d = (( x * (y1*z2 - z1*y2) ) - (y * (x1*z2 - z1*x2)) + ( z * (x1*y2 - x2*y1)));
+d = ((x * (y1 * z2 - z1 * y2)) - (y * (x1 * z2 - z1 * x2)) + (z * (x1 * y2 - x2 * y1)));
 
 console.log(d);
 
-d1 = (( xx * ( y1*z2 - z1*y2 ) ) - ( y *( yy*z2 - z1*zz ) ) + ( z * ( yy*y2 - y1*zz )));
+d1 = ((xx * (y1 * z2 - z1 * y2)) - (y * (yy * z2 - z1 * zz)) + (z * (yy * y2 - y1 * zz)));
 
 console.log(d1);
 
-d2 = (( x * (yy*z2 - z1*zz)) - (xx *(x1*z2 - z1*x2)) + (z * (x1*zz - yy*x2)));
+d2 = ((x * (yy * z2 - z1 * zz)) - (xx * (x1 * z2 - z1 * x2)) + (z * (x1 * zz - yy * x2)));
 
 console.log(d2);
 
-d3 = ((x * (y1* zz - yy*y2)) - (y * (x1*zz - yy*x2)) + (xx * (y2*x1 - y1*x2)));
+d3 = ((x * (y1 * zz - yy * y2)) - (y * (x1 * zz - yy * x2)) + (xx * (y2 * x1 - y1 * x2)));
 
 console.log(d3);
 
 let tx, ty, tz;
-tx = d1/d;           //x value
-ty = d2/d;           //y value
-tz = d3/d;           //z value
+tx = d1 / d; //x value
+ty = d2 / d; //y value
+tz = d3 / d; //z value
 
-document.getElementById("xvalue").innerHTML = "Value of X = " + tx;
-document.getElementById("yvalue").innerHTML = "Value of Y = " + t;
-document.getElementById("zvalue").innerHTML = "Value of Z = " + tz;
-
+document.getElementById("xvalue").innerHTML = ("Value of X = " + tx);
+document.getElementById("yvalue").innerHTML = ("Value of Y = " + ty);
+document.getElementById("zvalue").innerHTML = ("Value of Z = " + tz);
